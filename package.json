@@ -1,0 +1,20 @@
+{
+  "name": "roobottom-2022-indiekit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@indiekit/indiekit": "^0.3.0",
+    "@indiekit/preset-jekyll": "^0.3.0",
+    "@indiekit/store-github": "^0.3.0",
+    "dotenv": "^16.0.0",
+    "marked": "^4.0.15",
+    "yaml": "^2.0.1"
+  }
+}
