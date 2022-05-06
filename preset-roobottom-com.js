@@ -34,8 +34,8 @@ export const roobottomPreset = class {
         url: 'diary/{yyyy}-{MM}-{dd}-{slug}'
       },
       media: {
-        path: 'source/assets/images/diary/{yyyy}/{filename}',
-        url: '/assets/images/diary/{yyyy}/{filename}'
+        path: 'source/assets/images/diary/{yyyy}/{MM}-{dd}-{filename}',
+        url: '/assets/images/diary/{yyyy}/{MM}-{dd}-{filename}'
       }
     }, {
       type: 'note',
@@ -52,8 +52,8 @@ export const roobottomPreset = class {
         url: 'diary/{yyyy}-{MM}-{dd}-{slug}'
       },
       media: {
-        path: 'source/assets/images/diary/{yyyy}/{filename}',
-        url: '/assets/images/diary/{yyyy}/{filename}'
+        path: 'source/assets/images/diary/{yyyy}/{MM}-{dd}-{filename}',
+        url: '/assets/images/diary/{yyyy}/{MM}-{dd}-{filename}'
       }
     }];
   }
