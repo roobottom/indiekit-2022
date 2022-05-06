@@ -35,7 +35,7 @@ export const roobottomPreset = class {
       },
       media: {
         path: 'source/assets/images/diary/{yyyy}/{filename}',
-        url: 'images/diary/{yyyy}/{filename}'
+        url: '/assets/images/diary/{yyyy}/{filename}'
       }
     }, {
       type: 'note',
@@ -53,7 +53,7 @@ export const roobottomPreset = class {
       },
       media: {
         path: 'source/assets/images/diary/{yyyy}/{filename}',
-        url: 'images/diary/{yyyy}/{filename}'
+        url: '/assets/images/diary/{yyyy}/{filename}'
       }
     }];
   }
