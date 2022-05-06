@@ -78,7 +78,6 @@ export const roobottomPreset = class {
       test: 'item',
       anotherTest: createSummary('hi, my name is jon. I am 42.'),
       ...(properties.name && { title: properties.name }),
-      summary: createSummary(properties.content), //custom:`except`->`summary`
       ...(properties.category && { tags: properties.category }), //custom:`category`->`tags`
       ...(properties.start && { start: properties.start }),
       ...(properties.end && { end: properties.end }),
