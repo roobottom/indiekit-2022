@@ -11,7 +11,7 @@ import YAML from 'yaml'
 //form summary
 const createSummary = (content) => {
   var regexp = RegExp(/(^.*?[a-z]{2,}[.!?])\s+\W*/, 'm')
-  return (regexp.exec(content) === null) ? content : regexp.exec(content)[0]
+  return (regexp.exec(content) === null) ? content : regexp.exec(content)[0].trim()
 }
 
 export const roobottomPreset = class {
@@ -30,29 +30,29 @@ export const roobottomPreset = class {
       type: 'article',
       name: 'Long diary entry',
       post: {
-        path: 'source/content/diary/{yyyy}-{MM}-{dd}-{slug}.md',
+        path: 'source/diary/{yyyy}-{MM}-{dd}-{slug}.md',
         url: 'diary/{yyyy}-{MM}-{dd}-{slug}'
       },
       media: {
-        path: 'source/assets/images/dairy/{yyyy}/{filename}',
+        path: 'source/assets/images/diary/{yyyy}/{filename}',
         url: 'images/diary/{yyyy}/{filename}'
       }
     }, {
       type: 'note',
       name: 'Short diary entry',
       post: {
-        path: 'source/content/diary/{yyyy}-{MM}-{dd}-{slug}.md',
+        path: 'source/diary/{yyyy}-{MM}-{dd}-{slug}.md',
         url: 'diary/{yyyy}-{MM}-{dd}-{slug}'
       }
     }, {
       type: 'photo',
       name: 'Short diary entry with photos',
       post: {
-        path: 'source/content/diary/{yyyy}-{MM}-{dd}-{slug}.md',
+        path: 'source/diary/{yyyy}-{MM}-{dd}-{slug}.md',
         url: 'diary/{yyyy}-{MM}-{dd}-{slug}'
       },
       media: {
-        path: 'source/assets/images/dairy/{yyyy}/{filename}',
+        path: 'source/assets/images/diary/{yyyy}/{filename}',
         url: 'images/diary/{yyyy}/{filename}'
       }
     }];
