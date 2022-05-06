@@ -10,7 +10,7 @@ import YAML from 'yaml'
 
 //form summary
 const createSummary = (content) => {
-  var regexp = RegExp(/^.*?[.!?](?:\s|$)(?!.*\))/, 'm')
+  var regexp = RegExp(/(^.*?[a-z]{2,}[.!?])\s+\W*/, 'm')
   return (regexp.exec(content) === null) ? content : regexp.exec(content)[0]
 }
 
