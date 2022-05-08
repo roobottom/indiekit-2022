@@ -12,7 +12,7 @@ const server = indiekit.server()
 indiekit.set('publication.me', 'https://roobottom.com/')
 indiekit.set('publication.locale', 'en-GB')
 indiekit.set('publication.timeZone', 'Europe/London')
-indiekit.set('publication.categories', 'https://roobottom-2022.netlify.app/subjects.json')
+indiekit.set('publication.categories', 'https://roobottom.com/subjects.json')
 
 //configure store
 const github = new GithubStore({
