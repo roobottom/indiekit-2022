@@ -9,7 +9,7 @@ const indiekit = new Indiekit()
 const server = indiekit.server()
 
 //configure publication
-indiekit.set('publication.me', 'https://roobottom.com/')
+indiekit.set('publication.me', 'https://roobottom.com')
 indiekit.set('publication.locale', 'en-GB')
 indiekit.set('publication.timeZone', 'Europe/London')
 indiekit.set('publication.categories', 'https://roobottom.com/subjects.json')
